@@ -1,4 +1,4 @@
-package com.csp.spring.data.mongo;
+package com.csp.spring.data.mongo.model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -22,6 +22,8 @@ public class Person {
      */
     @Id
     private String id;
+
+    private String idNo;
 
     private String name;
 

@@ -1,7 +1,7 @@
 package com.csp.spring.data.mongo.demo2;
 
-import com.csp.spring.data.mongo.Address;
-import com.csp.spring.data.mongo.Person;
+import com.csp.spring.data.mongo.model.Address;
+import com.csp.spring.data.mongo.model.Person;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,7 +30,7 @@ public class PersonServiceTest {
 
         // save-or-update
         mongoTemplate.save(Person.builder()
-                .id("3").name("Jack").age(35).address(new Address("US", "LA", "")).build(), "person_info");
+                .idNo("3").name("Jack").age(35).address(new Address("US", "LA", "")).build(), "person_info");
         Assert.assertEquals(1, mongoTemplate.find(Query.query(Criteria.where("name").is("Jack")), Person.class).size());
     }
 

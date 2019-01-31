@@ -1,4 +1,4 @@
-package com.csp.spring.data.mongo;
+package com.csp.spring.data.mongo.model;
 
 import lombok.Data;
 

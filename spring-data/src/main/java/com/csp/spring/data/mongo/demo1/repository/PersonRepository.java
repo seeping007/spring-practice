@@ -1,6 +1,6 @@
 package com.csp.spring.data.mongo.demo1.repository;
 
-import com.csp.spring.data.mongo.Person;
+import com.csp.spring.data.mongo.model.Person;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
